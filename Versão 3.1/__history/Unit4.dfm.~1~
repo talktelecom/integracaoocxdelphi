@@ -1,0 +1,113 @@
+object Form4: TForm4
+  Left = 0
+  Top = 0
+  Caption = 'Form4'
+  ClientHeight = 337
+  ClientWidth = 532
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 24
+    Top = 40
+    Width = 29
+    Height = 13
+    Caption = 'Ramal'
+  end
+  object Label2: TLabel
+    Left = 24
+    Top = 67
+    Width = 11
+    Height = 13
+    Caption = 'ID'
+  end
+  object Label5: TLabel
+    Left = 24
+    Top = 94
+    Width = 30
+    Height = 13
+    Caption = 'Senha'
+  end
+  object Label4: TLabel
+    Left = 24
+    Top = 121
+    Width = 10
+    Height = 13
+    Caption = 'IP'
+  end
+  object Label3: TLabel
+    Left = 24
+    Top = 148
+    Width = 26
+    Height = 13
+    Caption = 'Porta'
+  end
+  object TalkManager_Button1: TTalkManager_Button
+    Left = 248
+    Top = 160
+    Width = 71
+    Height = 36
+    TabOrder = 0
+    ControlData = {
+      93B200002C010000030008000BF25747200000005F0065007800740065006E00
+      7400780057070000030008000AF25747200000005F0065007800740065006E00
+      74007900B903000003000900267525BE240000006200610063006B0063006F00
+      6C006F0072000F00008000000D00040075F30DBC3C00000066006F006E007400
+      0352E30B918FCE119DE300AA004BB851010000009001444201000D4D53205361
+      6E732053657269660D000700B67A22D234000000700069006300740075007200
+      65000452E30B918FCE119DE300AA004BB8516C74000000000000000003000900
+      38D7F7F22400000061006C00690067006E006D0065006E007400000000000000
+      08000700AD1A15A308FFFFFF630061007000740069006F006E00070000004100
+      74005F0043006F006D006D00}
+  end
+  object Button1: TButton
+    Left = 86
+    Top = 172
+    Width = 75
+    Height = 25
+    Caption = 'Logar'
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+  object Edt_Ramal: TEdit
+    Left = 86
+    Top = 37
+    Width = 121
+    Height = 21
+    TabOrder = 2
+  end
+  object Edt_ID: TEdit
+    Left = 86
+    Top = 64
+    Width = 121
+    Height = 21
+    TabOrder = 3
+  end
+  object Edt_Senha: TEdit
+    Left = 86
+    Top = 91
+    Width = 121
+    Height = 21
+    TabOrder = 4
+  end
+  object Edt_IP: TEdit
+    Left = 86
+    Top = 118
+    Width = 121
+    Height = 21
+    TabOrder = 5
+  end
+  object Edt_Porta: TEdit
+    Left = 86
+    Top = 145
+    Width = 121
+    Height = 21
+    TabOrder = 6
+  end
+end

@@ -1,0 +1,65 @@
+unit Unit4;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.OleCtrls, TalkManager_Control_TLB, Vcl.StdCtrls;
+
+type
+  TForm4 = class(TForm)
+    TalkManager_Button1: TTalkManager_Button;
+    Button1: TButton;
+    Edt_Ramal: TEdit;
+    Label1: TLabel;
+    Edt_ID: TEdit;
+    Label2: TLabel;
+    Edt_Senha: TEdit;
+    Label5: TLabel;
+    Edt_IP: TEdit;
+    Label4: TLabel;
+    Edt_Porta: TEdit;
+    Label3: TLabel;
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form4: TForm4;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm4.Button1Click(Sender: TObject);
+var
+  iID,
+  iIP,
+  iPort,
+  iSenha,
+  iRamal : WideString;
+begin
+  if (Edt_ID.Text    <> EmptyStr) and
+     (Edt_IP.Text    <> EmptyStr) and
+     (Edt_Porta.Text <> EmptyStr) and
+     (Edt_Senha.Text <> EmptyStr) and
+     (Edt_Ramal.Text <> EmptyStr) then
+  begin
+    iID    := Edt_ID.Text;
+    iIP    := Edt_IP.Text;
+    iPort  := Edt_Porta.Text;
+    iSenha := Edt_Senha.Text;
+    iRamal := Edt_Ramal.Text;
+
+    TalkManager_Button1.met_Logon_Automatico(iRamal, iID, iSenha, iIP, iPort);
+  end
+  else
+  begin
+    ShowMessage('Favor Preencher Todos os Campos');
+  end;
+end;
+
+end.

@@ -1,0 +1,10 @@
+Registre no Windows a OCX via Prompt Comando
+(cmd)
+regsvr32 "Caminho da OCX, pode colocar a mesma no projeto/TalkManager_Control.ocx"
+depois de registrar coloque os arquivos () juntos da OCX , os arquivos estão da pasta OCXAtendimento
+MSFLXGRD.OCX
+TalkCall.mdb
+towave.dll
+VB5DB.DLL
+talk.dll
+pjcfg.ini

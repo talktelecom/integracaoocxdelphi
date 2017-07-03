@@ -1,2 +1,0 @@
-# integracaoocxdelphi
-Integração OCX Delphi
